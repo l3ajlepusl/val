@@ -308,6 +308,17 @@
     });
 
     noBtn.addEventListener("click", e => e.preventDefault());
+    /* ---------- MOBILE TAP FIX ---------- */
+noBtn.addEventListener("pointerdown", e => {
+  e.preventDefault();
+  moveNo(e.clientX, e.clientY);
+});
+
+/* Extra safety for older mobile browsers */
+noBtn.addEventListener("touchstart", e => {
+  const touch = e.touches[0];
+  moveNo(touch.clientX, touch.clientY);
+}, { passive: false });
 
     /* ---------- YES CLICK ---------- */
     yesBtn.addEventListener("click", () => {
@@ -320,6 +331,7 @@
   </script>
 </body>
 </html>
+
 
 
 

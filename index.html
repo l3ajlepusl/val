@@ -134,42 +134,62 @@
 
   <main class="card">
     <!-- ANIMAL WITH HEART -->
-    <svg class="art" viewBox="0 0 320 240" xmlns="http://www.w3.org/2000/svg">
-      <defs>
-        <linearGradient id="fur" x1="0" x2="1">
-          <stop offset="0" stop-color="#f7c7a1"/>
-          <stop offset="1" stop-color="#f2a97b"/>
-        </linearGradient>
-        <linearGradient id="heart" x1="0" x2="1">
-          <stop offset="0" stop-color="#ff4d7d"/>
-          <stop offset="1" stop-color="#ff1f68"/>
-        </linearGradient>
-      </defs>
+   <!-- CUTE CLOWN WITH HEART -->
+<svg class="art" viewBox="0 0 320 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="face" x1="0" x2="1">
+      <stop offset="0" stop-color="#fff6f6"/>
+      <stop offset="1" stop-color="#ffe9f2"/>
+    </linearGradient>
 
-      <path d="M250 50 C250 33 270 25 282 38
-               C294 25 314 33 314 50
-               C314 78 282 92 282 106
-               C282 92 250 78 250 50Z"
-            fill="url(#heart)"/>
+    <linearGradient id="hat" x1="0" x2="1">
+      <stop offset="0" stop-color="#7ad3ff"/>
+      <stop offset="1" stop-color="#4aa3ff"/>
+    </linearGradient>
 
-      <path d="M90 120 C90 70 140 40 190 60
-               C240 40 290 70 290 120
-               C290 180 240 210 190 210
-               C140 210 90 180 90 120Z"
-            fill="url(#fur)"/>
+    <linearGradient id="heart" x1="0" x2="1">
+      <stop offset="0" stop-color="#ff4d7d"/>
+      <stop offset="1" stop-color="#ff1f68"/>
+    </linearGradient>
+  </defs>
 
-      <path d="M110 92 L95 55 L140 78 Z" fill="#f2a97b"/>
-      <path d="M270 92 L285 55 L240 78 Z" fill="#f2a97b"/>
+  <!-- HEART -->
+  <path d="M220 40 C220 25 240 20 250 32
+           C260 20 280 25 280 40
+           C280 65 250 80 250 95
+           C250 80 220 65 220 40Z"
+        fill="url(#heart)"/>
 
-      <circle cx="160" cy="130" r="8"/>
-      <circle cx="220" cy="130" r="8"/>
+  <!-- HAT -->
+  <rect x="130" y="40" width="120" height="50" rx="20"
+        fill="url(#hat)"/>
+  <circle cx="250" cy="40" r="15" fill="#ff4d7d"/>
 
-      <path d="M190 144 C186 144 182 148 182 152
-               C182 160 190 164 190 170
-               C190 164 198 160 198 152
-               C198 148 194 144 190 144Z"
-            fill="#ff7aa2"/>
-    </svg>
+  <!-- HAIR PUFFS -->
+  <circle cx="100" cy="130" r="25" fill="#ff7aa2"/>
+  <circle cx="280" cy="130" r="25" fill="#ff7aa2"/>
+
+  <!-- FACE -->
+  <circle cx="190" cy="150" r="80" fill="url(#face)" stroke="#ffbdd2" stroke-width="3"/>
+
+  <!-- EYES -->
+  <circle cx="160" cy="140" r="10"/>
+  <circle cx="220" cy="140" r="10"/>
+
+  <!-- CHEEKS -->
+  <circle cx="135" cy="165" r="12" fill="#ffb3c6"/>
+  <circle cx="245" cy="165" r="12" fill="#ffb3c6"/>
+
+  <!-- NOSE -->
+  <circle cx="190" cy="160" r="14" fill="#ff4d4d"/>
+
+  <!-- SMILE -->
+  <path d="M155 185 Q190 215 225 185"
+        stroke="#ff4d7d"
+        stroke-width="4"
+        fill="none"
+        stroke-linecap="round"/>
+</svg>
 
     <h1>Sherwyn will you be my valentine?</h1>
 
@@ -300,6 +320,7 @@
   </script>
 </body>
 </html>
+
 
 
 
